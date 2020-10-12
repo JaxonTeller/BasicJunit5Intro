@@ -26,7 +26,7 @@ class MathUtilsTest {
 
 
     @Nested
-    @Tag("Math")
+    @MathTest
     class AddClasTest
     {
 
@@ -51,8 +51,7 @@ class MathUtilsTest {
 
 
 
-    @Test
-    @Tag("Circle")
+    @CircleTest
     @DisplayName("AREAOFCIRCLETEST")
     public void testForComputingAreaOfCircle()
     {
@@ -60,8 +59,7 @@ class MathUtilsTest {
         assertEquals(50.26548245743669,mathUtils.computeCircleArea(radious),"Computing circle redius");
     }
 
-    @Test
-    @Tag("Math")
+    @MathTest
     @DisplayName("DIVIDEMETHODTEST")
     @Disabled
     public void testDivideMethodWhichThrowsException()  {
